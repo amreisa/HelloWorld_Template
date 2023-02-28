@@ -1,0 +1,3 @@
+[submodule "Code/ThirdParty/wxWidgets"]
+	path = Code/ThirdParty/wxWidgets
+	url = https://github.com/wxWidgets/wxWidgets.git
