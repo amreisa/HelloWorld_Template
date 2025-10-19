@@ -34,8 +34,7 @@ bool MyApp::OnInit() {
 
 MyFrame::MyFrame( const wxString &title, const wxPoint &pos, const wxSize &size ) : wxFrame( NULL, wxID_ANY, title, pos, size ) {
     wxMenu *menuFile = new wxMenu;
-    menuFile->Append( ID_Hello, _( "&Hello...\tCtrl-H" ),
-                      _( "Help string shown in status bar for this menu item" ) );
+    // menuFile->Append( ID_Hello, _( "&Hello...\tCtrl-H" ), _( "Help string shown in status bar for this menu item" ) );
     menuFile->AppendSeparator();
     menuFile->Append( wxID_EXIT );
     wxMenu *menuHelp = new wxMenu;
@@ -53,8 +52,7 @@ void MyFrame::OnExit( wxCommandEvent &event ) {
 }
 
 void MyFrame::OnAbout( wxCommandEvent &event ) {
-    wxMessageBox( _( "This is a wxWidgets' Hello world sample" ),
-                  _( "About Hello World" ), wxOK | wxICON_INFORMATION );
+    wxMessageBox( _( "This is a wxWidgets' Hello world sample" ), _( "About Hello World" ), wxOK | wxICON_INFORMATION );
 }
 
 void MyFrame::OnHello( wxCommandEvent &event ) {
